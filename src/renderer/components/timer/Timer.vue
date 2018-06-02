@@ -7,7 +7,6 @@
     </app-timer-dial>
 
     <section class="Container Button-wrapper">
-      <transition name="fade" mode="out-in">
         <div class="Button" v-if="!timerStarted" @click="startTimer" :key="'start'">
           <div class="Button-icon-wrapper">
             <svg version="1.2" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -32,7 +31,6 @@
             </svg>
           </div>
         </div>
-      </transition>
     </section>
 
     <app-timer-footer/>
@@ -212,7 +210,6 @@ export default {
   border-radius: 100%;
   display: flex;
   justify-content: center;
-  transition: $transitionDefault;
   width: 50px;
   height: 50px;
   -webkit-app-region: no-drag;
